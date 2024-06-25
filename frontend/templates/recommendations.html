@@ -38,22 +38,18 @@
         </div>
         {% with messages = get_flashed_messages() %}
         {% if messages %}
-        <ul>
             {% for message in messages %}
-            <li>{{ message }}</li>
+                {{ message }}
             {% endfor %}
-        </ul>
         {% endif %}
         {% endwith %}
         <p>{{ intro }}</p>
 
         {% for day, exercises in structured_recommendations %}
         <h3>{{ day }}</h3>
-        <ul>
             {% for exercise in exercises %}
                 {{ exercise }}
             {% endfor %}
-        </ul>
         {% endfor %}
     </div>
 </body>
