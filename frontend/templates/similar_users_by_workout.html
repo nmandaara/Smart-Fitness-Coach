@@ -28,25 +28,8 @@
         <br>
         <h1>Similar Users by Workout</h1>
         <div>
-            <form action="{{ url_for('similar_users_by_workout') }}" method="post">
-                <div>
-                    <label>Username:</label>
-                    <input type="text" name="username" required>
-                </div>
-                <button type="submit" class="button-style"> Get Similar Users </button>
-            </form>
+            UNDER CONSTRUCTION
         </div>
-        {% with messages = get_flashed_messages() %}
-        {% if messages %}
-        <ul>
-            {% for message in messages %}
-                {{ message }}
-            {% endfor %}
-        </ul>
-        {% endif %}
-        {% endwith %}
-        {{ data }}
-
     </div>
 </body>
 
