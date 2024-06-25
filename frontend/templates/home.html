@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Fitness Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+
+<body>
+    <header>
+        <div class="banner">
+            <strong><h1>SMART FITNESS COACH</h1></strong>
+        </div>
+    </header>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('chat') }}">BuffBot Insights</a></li>
+                <li><a href="{{ url_for('register') }}">Register</a></li>
+                <li><a href="{{ url_for('add_workout') }}">Add Workout</a></li>
+                <li><a href="{{ url_for('recommendations') }}">Recommendations</a></li>
+                <li><a href="{{ url_for('similar_users_weight') }}">Similar Users By Weight</a></li>
+                <li><a href="{{ url_for('similar_users_by_workout') }}">Similar Users By Workout</a></li>
+            </ul>
+        </nav>
+        <div class="inside-container">
+            <section id="introduction">
+                <h2>Begin Your Journey With Us!</h2>
+                <p>Embark on your fitness journey with SMART FITNESS COACH, your ultimate digital partner in health and wellness. Whether you're looking to lose weight, build strength, or improve your overall fitness, our personalized coaching and community support are here to guide you every step of the way.</p>
+            </section>
+
+            <!-- How It Works Section -->
+            <section id="how-it-works">
+                <h2>How Smart Fitnes Coach works</h2>
+                <ol>
+                    <li>
+                        <h3>Create Profiles</h3>
+                        <p>Create your profile with your email, current weight and unique username</p>
+                    </li>
+                    <li>
+                        <h3>Get Recommendations</h3>
+                        <p>Receive tailored recommendations based on your current weight, age and workouts; you can also get diet plan.</p>
+                    </li>
+                    <li>
+                        <h3>BuffBot Insights</h3>
+                        <p>Chat with the bot to get info related to your weight loss journey, your workouts and also similar users in your weigh category, workout category etc.</p>
+                    </li>
+                    <li>
+                        <h3>Track Your Progress</h3>
+                        <p>Track your progress by adding your workouts </p>
+                    </li>
+                </ol>
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>

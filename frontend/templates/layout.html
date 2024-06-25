@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Layout</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <script>
+        function updateScroll() {
+            var element = document.querySelector(".chat-messages");
+            element.scrollTop = element.scrollHeight; // Scrolls to the bottom
+        }
+
+        // Example usage: Call updateScroll() after appending a new message to '.chat-messages'
+        // You can add this in your form submission event after the message is successfully appended.
+
+        document.getElementById('chatForm').addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent default form submission behavior
+
+            var messageInput = document.querySelector('[name="message"]');
+            var message = messageInput.value; // Get the message from input field
+            messageInput.value = ''; // Clear the input field
+
+            // Simulate sending message and receiving confirmation to add to DOM
+            sendMessage(message);
+        });
+
+        function sendMessage(message) {
+            var messagesContainer = document.querySelector('.chat-messages');
+            var newMessage = document.createElement('div');
+            newMessage.className = 'chat-message user';
+            newMessage.textContent = message;
+            messagesContainer.appendChild(newMessage);
+
+            updateScroll(); // Call to scroll down after the message is added
+        }
+        function clearMessages() {
+            const messages = document.getElementById('chat-messages');
+            messages.innerHTML = ''; // Clears all chat messages
+        }
+    </script>
+
+
+</head>
+
+<body>
+    <header>
+        <div class="banner">
+            <h1>SMART FITNESS COACH</h1>
+        </div>
+    </header>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('chat') }}">BuffBot Insights</a></li>
+                <li><a href="{{ url_for('register') }}">Register</a></li>
+                <li><a href="{{ url_for('recommendations') }}">Recommendations</a></li>
+                <li><a href="{{ url_for('similar_users_weight') }}">Similar Users By Weight</a></li>
+                <li><a href="{{ url_for('similar_users_by_workout') }}">Similar Users By Workout</a></li>
+            </ul>
+        </nav>
+        <br>
+        <div class="chat-container">
+            <div class="chat-header">
+                <h2>BuffBot</h2>
+            </div>
+            <div class="chat-messages">
+                {% for message in messages %}
+                <div class="chat-message {{ message.sender }}">
+                    <p>{{ message.text }}</p>
+                </div>
+                {% endfor %}
+            </div>
+            <div class="chat-footer">
+                <form action="{{ url_for('chat') }}" method="post" id="chatForm">
+                    <input type="text" name="message" placeholder="Type your message..." required>
+                    <button type="submit" onclick=updateScroll()>Send</button>
+                </form>
+            </div>
+        </div>
+        <br>
+        <button type="submit" onclick=clearMessages() class="button-style">Clear Messages</button>
+    </div>
+</body>
+
+</html>

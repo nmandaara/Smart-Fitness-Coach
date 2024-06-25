@@ -1,0 +1,102 @@
+[
+    {
+        "username": "james_bond",
+        "current_weight": 208,
+        "date": "2024-06-23"
+    },
+    {
+        "username": "sarah_connor",
+        "current_weight": 130,
+        "date": "2024-06-23"
+    },
+    {
+        "username": "bruce_wayne",
+        "current_weight": 181,
+        "date": "2024-06-23"
+    },
+    {
+        "username": "tony_stark",
+        "current_weight": 168,
+        "date": "2024-06-23"
+    },
+    {
+        "username": "lara_croft",
+        "current_weight": 125,
+        "date": "2024-06-23"
+    },
+    {
+        "username": "john_wick",
+        "current_weight": 175,
+        "date": "2024-06-23"
+    },
+    {
+        "username": "ella_fitz",
+        "current_weight": 139,
+        "date": "2024-06-23"
+    },
+    {
+        "username": "mike_ross",
+        "current_weight": 157,
+        "date": "2024-06-23"
+    },
+    {
+        "username": "clara_oswald",
+        "current_weight": 127,
+        "date": "2024-06-23"
+    },
+    {
+        "username": "steve_rogers",
+        "current_weight": 225,
+        "date": "2024-06-23"
+    },
+    {
+        "username": "diana_prince",
+        "current_weight": 146,
+        "date": "2024-06-23"
+    },
+    {
+        "username": "max_payne",
+        "current_weight": 189,
+        "date": "2024-06-23"
+    },
+    {
+        "username": "nina_williams",
+        "current_weight": 130,
+        "date": "2024-06-23"
+    },
+    {
+        "username": "peter_parker",
+        "current_weight": 154,
+        "date": "2024-06-23"
+    },
+    {
+        "username": "hannah_smith",
+        "current_weight": 142,
+        "date": "2024-06-23"
+    },
+    {
+        "username": "luke_skywalker",
+        "current_weight": 164,
+        "date": "2024-06-23"
+    },
+    {
+        "username": "leia_organa",
+        "current_weight": 134,
+        "date": "2024-06-23"
+    },
+    {
+        "username": "han_solo",
+        "current_weight": 170,
+        "date": "2024-06-23"
+    },
+    {
+        "username": "clark_kent",
+        "current_weight": 196,
+        "date": "2024-06-23"
+    },
+    {
+        "username": "lois_lane",
+        "current_weight": 122,
+        "date": "2024-06-23"
+    }
+]

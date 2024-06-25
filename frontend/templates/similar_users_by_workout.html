@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Similar Users by Workout</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+
+<body>
+    <header>
+        <div class="banner">
+            <h1>SMART FITNESS COACH</h1>
+        </div>
+    </header>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('chat') }}">BuffBot Insights</a></li>
+                <li><a href="{{ url_for('register') }}">Register</a></li>
+                <li><a href="{{ url_for('recommendations') }}">Recommendations</a></li>
+                <li><a href="{{ url_for('similar_users_weight') }}">Similar Users By Weight</a></li>
+                <li><a href="{{ url_for('similar_users_by_workout') }}">Similar Users By Workout</a></li>
+            </ul>
+        </nav>
+        <br>
+        <h1>Similar Users by Workout</h1>
+        <div>
+            <form action="{{ url_for('similar_users_by_workout') }}" method="post">
+                <div>
+                    <label>Username:</label>
+                    <input type="text" name="username" required>
+                </div>
+                <button type="submit" class="button-style"> Get Similar Users </button>
+            </form>
+        </div>
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        <ul>
+            {% for message in messages %}
+                {{ message }}
+            {% endfor %}
+        </ul>
+        {% endif %}
+        {% endwith %}
+        {{ data }}
+
+    </div>
+</body>
+
+</html>

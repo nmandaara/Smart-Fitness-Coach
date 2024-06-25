@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Question App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="banner">
+            <h1>SMART FITNESS COACH</h1>
+        </div>
+    </header>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('chat') }}">BuffBot Insights</a></li>
+                <li><a href="{{ url_for('register') }}">Register</a></li>
+                <li><a href="{{ url_for('recommendations') }}">Recommendations</a></li>
+                <li><a href="{{ url_for('similar_users_weight') }}">Similar Users By Weight</a></li>
+                <li><a href="{{ url_for('similar_users_by_workout') }}">Similar Users By Workout</a></li>
+            </ul>
+        </nav>
+        <br>
+        <h1>Ask a Fitness Question</h1>
+        <form id="question-form">
+            <input type="text" id="question" name="question" placeholder="Enter your question" required>
+            <button type="submit" class="button-style">Submit</button>
+        </form>
+        <div id="response"></div>
+
+        <script>
+            $(document).ready(function () {
+                $('#question-form').on('submit', function (event) {
+                    event.preventDefault();
+                    var question = $('#question').val();
+                    $.ajax({
+                        type: 'POST',
+                        url: '/ask',
+                        data: { question: question },
+                        success: function (data) {
+                            $('#response').html('<p>' + data.answer + '</p>');
+                        }
+                    });
+                });
+            });
+        </script>
+    </div>
+</body>
+
+</html>

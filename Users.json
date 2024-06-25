@@ -1,0 +1,142 @@
+[
+    {
+        "username": "james_bond",
+        "email": "james_bond@example.com",
+        "name": "James Bond",
+        "age": 45,
+        "weight": 135
+    },
+    {
+        "username": "sarah_connor",
+        "email": "sarah_connor@example.com",
+        "name": "Sarah Connor",
+        "age": 27,
+        "weight": 190
+    },
+    {
+        "username": "bruce_wayne",
+        "email": "bruce_wayne@example.com",
+        "name": "Bruce Wayne",
+        "age": 36,
+        "weight": 172
+    },
+    {
+        "username": "tony_stark",
+        "email": "tony_stark@example.com",
+        "name": "Tony Stark",
+        "age": 37,
+        "weight": 189
+    },
+    {
+        "username": "lara_croft",
+        "email": "lara_croft@example.com",
+        "name": "Lara Croft",
+        "age": 30,
+        "weight": 135
+    },
+    {
+        "username": "john_wick",
+        "email": "john_wick@example.com",
+        "name": "John Wick",
+        "age": 41,
+        "weight": 170
+    },
+    {
+        "username": "ella_fitzgerald",
+        "email": "ella_fitzgerald@example.com",
+        "name": "Ella Fitzgerald",
+        "age": 36,
+        "weight": 200
+    },
+    {
+        "username": "mike_ross",
+        "email": "mike_ross@example.com",
+        "name": "Mike Ross",
+        "age": 31,
+        "weight": 133
+    },
+    {
+        "username": "clara_oswald",
+        "email": "clara_oswald@example.com",
+        "name": "Clara Oswald",
+        "age": 26,
+        "weight": 189
+    },
+    {
+        "username": "steve_rogers",
+        "email": "steve_rogers@example.com",
+        "name": "Steve Rogers",
+        "age": 38,
+        "weight": 210
+    },
+    {
+        "username": "diana_prince",
+        "email": "diana_prince@example.com",
+        "name": "Diana Prince",
+        "age": 25,
+        "weight": 214
+    },
+    {
+        "username": "max_payne",
+        "email": "max_payne@example.com",
+        "name": "Max Payne",
+        "age": 49,
+        "weight": 195
+    },
+    {
+        "username": "nina_williams",
+        "email": "nina_williams@example.com",
+        "name": "Nina Williams",
+        "age": 34,
+        "weight": 205
+    },
+    {
+        "username": "peter_parker",
+        "email": "peter_parker@example.com",
+        "name": "Peter Parker",
+        "age": 31,
+        "weight": 141
+    },
+    {
+        "username": "hannah_smith",
+        "email": "hannah_smith@example.com",
+        "name": "Hannah Smith",
+        "age": 30,
+        "weight": 153
+    },
+    {
+        "username": "luke_skywalker",
+        "email": "luke_skywalker@example.com",
+        "name": "Luke Skywalker",
+        "age": 45,
+        "weight": 208
+    },
+    {
+        "username": "leia_organa",
+        "email": "leia_organa@example.com",
+        "name": "Leia Organa",
+        "age": 29,
+        "weight": 144
+    },
+    {
+        "username": "han_solo",
+        "email": "han_solo@example.com",
+        "name": "Han Solo",
+        "age": 48,
+        "weight": 125
+    },
+    {
+        "username": "clark_kent",
+        "email": "clark_kent@example.com",
+        "name": "Clark Kent",
+        "age": 36,
+        "weight": 194
+    },
+    {
+        "username": "lois_lane",
+        "email": "lois_lane@example.com",
+        "name": "Lois Lane",
+        "age": 28,
+        "weight": 202
+    }
+]
