@@ -18,3 +18,11 @@ During Phases 1 and 2, I gained significant knowledge about building a copilot f
 
 ## What's next for Smart Fitness Coach
 The app connects with fitness trackers such as Fitbit, Apple Watch, and Google Health, automatically importing data instead of requiring manual entry. It also links with meal trackers to analyze macronutrients and dynamically adjusts users' goals to ensure they stay on the right track.
+
+## Website Screenshots
+![HomePage](Screenshots/HomePage.PNG)
+![Register](Screenshots/Register.PNG)
+![Recommendations](Screenshots/Recommendations.PNG)
+![Add Workout](Screenshots/Add_Workout.PNG)
+![Similar Users by weight](Screenshots/Similar_Users_By_Weight.PNG)
+![Buffbot Insights](Screenshots/Buffbot_Insights.PNG)
